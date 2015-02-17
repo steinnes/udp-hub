@@ -1,0 +1,11 @@
+{ "Maps":
+   [
+      {
+         "SrcPort": 7070,
+         "DstAddr": [
+            {"Host": "localhost", "Port": 7071},
+            {"Host": "localhost", "Port": 7072}
+         ]
+      }
+   ]
+}
