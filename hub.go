@@ -29,7 +29,7 @@ func sendBuf(dst Address, buf []byte, ret chan int) {
 	conn, err := net.Dial("udp", fmt.Sprintf("%s:%d", dst.Host, dst.Port));
 	check(err);
 
-	n, err := conn.Write(buf)
+	_, err = conn.Write(buf)
 	check(err);
 
 	ret <- 1
